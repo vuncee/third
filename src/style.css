@@ -1,4 +1,4 @@
-/* 1. Загальний фон та центрування */
+
 body {
   margin: 0;
   padding: 20px;
@@ -7,11 +7,11 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(180deg, #f0f4f8 0%, #d7e1ec 100%); /* М'який градієнт */
+  background: linear-gradient(180deg, #f0f4f8 0%, #d7e1ec 100%); 
   color: #333;
 }
 
-/* 2. Пошуковий блок */
+
 .main {
   display: flex;
   gap: 10px;
