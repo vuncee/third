@@ -1,0 +1,80 @@
+/* 1. Загальний фон та центрування */
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #f0f4f8 0%, #d7e1ec 100%); /* М'який градієнт */
+  color: #333;
+}
+
+/* 2. Пошуковий блок */
+.main {
+  display: flex;
+  gap: 10px;
+  margin: 40px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+#weather-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#finder {
+  padding: 12px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#finder:hover {
+  background-color: #555;
+}
+
+
+#Weather-shows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  list-style: none;
+}
+
+
+.weather-card {
+  flex: 0 0 140px;
+  min-height: 180px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+}
+
+.time { font-size: 0.8rem; color: #666; }
+.temp { font-size: 1.2rem; font-weight: bold; }
+.cond { font-size: 0.7rem; text-align: center; color: #888; }
